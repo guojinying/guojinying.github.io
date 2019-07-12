@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>太阳系</title>
+
+	<link rel="stylesheet" type="text/css" href="">
+
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 100%;
+			height: 100%;
+		}
+		.sun{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			background-color: red;
+			border-radius: 50%; 
+		}
+		.mercury{
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border:1px solid #000;
+			border-radius: 50%; 
+			animation: rotate 2s linear 0s infinite normal;
+		}
+		.mercury>span{
+			width: 20px;
+			height: 20px;
+			background-color: #d7edff;
+			display: block;
+			position: absolute;
+			right: -10px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 50%; 
+		}
+		.venus{
+			width: 140px;
+			height: 140px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border:1px solid #000;
+			border-radius: 50%; 
+			animation: rotate 3s linear 0s infinite normal;
+		}
+		.venus>span{
+			width: 30px;
+			height: 30px;
+			background-color: #FFD700;
+			display: block;
+			position: absolute;
+			right: -15px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 50%; 
+		}
+		.earth{
+			width: 220px;
+			height: 220px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border:1px solid #000;
+			border-radius: 50%; 
+			animation: rotate 5s linear 0s infinite normal;
+		}
+		.earth>span{
+			width: 25px;
+			height: 25px;
+			background-color: #0000FF;
+			display: block;
+			position: absolute;
+			right: -15px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 50%; 
+		}
+		.moon{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			left: -13px;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border:1px solid #000;
+			border-radius: 50%; 
+			animation: rotate 1s linear 0s infinite normal;
+		}
+		.moon>span{
+			width: 20px;
+			height: 20px;
+			background-color: #C0C0C0;
+			display: block;
+			position: absolute;
+			right: -10px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 50%; 
+		}
+		.mars{
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			left: -13px;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border:1px solid #000;
+			border-radius: 50%; 
+			animation: rotate 2s linear 0s infinite normal;
+		}
+		.mars>span{
+			width: 20px;
+			height: 20px;
+			background-color: #0000CD;
+			display: block;
+			position: absolute;
+			right: -10px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 50%; 
+		}
+		
+		@keyframes rotate{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(-360deg);
+			}
+		}
+
+		.but1{
+			width: 100px;
+			height: 30px;
+			position: fixed; 
+   			bottom: 5px;
+   			margin-left: 500px;
+		}
+
+		.but2{			
+   			width: 100px;
+			height: 30px;
+			position: fixed; 
+			margin-left: 630px;
+   			bottom: 5px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="box">
+	<div class="sun"></div>
+
+	<!--水星-->
+	<div class="mercury">
+		<span></span>
+	</div>
+
+	<!--金星-->
+	<div class="venus">
+		<span></span>
+	</div>
+
+	<!--地球-->
+	<div class="earth">
+		<span>
+			<div class="moon">
+				<span></span>
+			</div>
+		</span>
+		
+	</div>
+
+	<!--火星-->
+	<div class="mars">
+		<span></span>
+	</div>
+
+	<button class="but1"><a href="file:///C:/Users/newuser/Documents/GitHub/guojinying.github.io/index.html">首页</a></button>
+
+	<button class="but2"><a href="file:///C:/Users/newuser/Documents/GitHub/guojinying.github.io/demo3.html">上一页</a></button>
+
+
+</div>
+
+</body>
+</html>
